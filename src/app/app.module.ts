@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { TitleComponent } from './title.component';
 import { UserService } from './user.service';
 import { HighlightDirective } from './highlight.directive';
+import { ContactService } from './contact/contact.service';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,7 @@ import { HighlightDirective } from './highlight.directive';
   TitleComponent,
 ],
   imports: [ BrowserModule ],
-  providers: [UserService],
+  providers: [ ContactService, UserService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
