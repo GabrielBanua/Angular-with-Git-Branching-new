@@ -13,7 +13,7 @@ import { ContactService } from './contact/contact.service';
   HighlightDirective,
   TitleComponent,
 ],
-  imports: [ BrowserModule ],
+  imports: [ BrowserModule, FormsModule ],
   providers: [ ContactService, UserService ],
   bootstrap: [AppComponent]
 })
