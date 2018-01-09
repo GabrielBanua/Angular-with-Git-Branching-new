@@ -5,3 +5,6 @@ import { Injectable } from '@angular/core';
 export class UserService {
   userName = 'Sherlock Holmes';
 }
+constructor(@Optional() config: UserServiceConfig) {
+  if (config) { this._userName = config.userName; }
+}
